@@ -4,24 +4,20 @@
       <v-toolbar-title>Social Music</v-toolbar-title>
     </v-app-bar>
     <v-main>
-        <Home />
+      <router-view />
     </v-main>
     <v-footer app dark>
-      <v-spacer/>
+      <v-spacer />
       <div>&copy; {{ new Date().getFullYear() }}</div>
     </v-footer>
   </v-app>
 </template>
 
 <script>
-import Home from "./views/Home";
-
 export default {
   name: "App",
 
-  components: {
-    Home
-  },
+  components: {},
 
   data: () => ({
     //
